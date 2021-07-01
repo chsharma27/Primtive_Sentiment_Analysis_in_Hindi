@@ -40,7 +40,7 @@ def classifier(sentence):
     words=sentence.split(" ")
     score = 0
     for i in words:
-        if i =="नहीं":
+        if i=="न" or i=="नहीं":
             if score == 0:
                 score-=1
             else:
