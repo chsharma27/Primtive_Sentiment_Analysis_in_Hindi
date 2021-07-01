@@ -68,6 +68,7 @@ o = codecs.open('output.txt', 'w', 'utf-8')
 for key,value in out.items():
     o.write(key+" - "+value[0])
 
+print("Positives : ",sentiments['Positive'],", Negatives : ",sentiments['Negative'],", Neutrals : ",sentiments['Neutral'])
 o.close()
 positive.close()
 negative.close()
